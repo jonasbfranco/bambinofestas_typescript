@@ -17,5 +17,6 @@ export const Container = styled.div`
   ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 `;

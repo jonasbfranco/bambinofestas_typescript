@@ -38,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     #text-transform: uppercase;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif, cursive;
     font-size: 40px;
+    padding-left: 25px;
   }
   a {
     text-decoration:none;
