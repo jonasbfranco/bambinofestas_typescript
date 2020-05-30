@@ -14,3 +14,7 @@
 # Jonas Baptista Franco
 
 [Site Oficial](https://jonasbfranco.github.io)
+
+- yarn add react-icons
+- yarn add styled-component
+- yarn add -D @types/styled-components
