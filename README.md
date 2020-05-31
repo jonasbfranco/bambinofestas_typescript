@@ -29,3 +29,4 @@
 - git add .
 - git commit -m "Escreva seu commit"
 - git push
+- git log
