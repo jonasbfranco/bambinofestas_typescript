@@ -1,11 +1,15 @@
 import React, { useState, useCallback } from 'react';
 import { FiSun, FiMenu, FiX } from 'react-icons/fi';
+import { FaMoon } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+import { useTheme } from '../../context/theme';
 import { Background, Container, MenuDrawer } from './styles';
 
 const NavBar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
+
+  const { changeTheme, theme } = useTheme();
 
   const handleOpen = useCallback(
     (close = false): void => {
@@ -26,7 +30,11 @@ const NavBar: React.FC = () => {
         </Link>
         <FiMenu size={50} color="#fff" onClick={(): void => handleOpen()} />
         <ul>
-          <FiSun size={28} color="#fff" />
+          {theme === 'dark' ? (
+            <FiSun size={28} color="#fff" onClick={changeTheme} />
+          ) : (
+            <FaMoon size={26} color="#fff" onClick={changeTheme} />
+          )}
           <Link to="/">
             <li>Home</li>
           </Link>
@@ -55,7 +63,11 @@ const NavBar: React.FC = () => {
         <Link to="Estrutura" onClick={(): void => handleOpen()}>
           <li>Estrutura</li>
         </Link>
-        <FiSun size={28} color="#fff" />
+        {theme === 'dark' ? (
+          <FiSun size={28} color="#fff" onClick={changeTheme} />
+        ) : (
+          <FaMoon size={26} color="#fff" onClick={changeTheme} />
+        )}
       </MenuDrawer>
     </Background>
   );

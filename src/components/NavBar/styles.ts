@@ -44,16 +44,34 @@ export const Container = styled.div`
   }
 `;
 
+/*
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #be2edd;
+  transition: all 0.2s;
+  z-index: 98;
+  display: flex;
+  overflow-y: auto;
+  &.show {
+    left: 0;
+  }
+*/
+
 export const MenuDrawer = styled.ul<MenuDrawerProps>`
   position: absolute;
   background-color: #422680;
-  top: 0;
+  top: 0px;
   height: 100vh;
   width: 40vw;
   right: 0;
   display: ${(props): string => (props.isOpen ? 'block' : 'none')};
   svg:first-child {
     height: 60px;
+    color: #fff;
     margin-left: calc(100% - 60px);
   }
   li {
@@ -64,7 +82,11 @@ export const MenuDrawer = styled.ul<MenuDrawerProps>`
     margin: 20px 0 0 25px;
   }
   @media (max-width: 700px) {
-    width: 50vw;
+    width: 100%;
+    height: 100vh;
+    a {
+      text-align: center;
+    }
   }
   @media (max-width: 460px) {
     width: 70vw;

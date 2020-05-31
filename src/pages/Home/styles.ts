@@ -14,14 +14,13 @@ export const Hello = styled.div`
   align-items: center;
   justify-content: center;
 
-  h1 {
+  p {
     margin-left: 60px;
     font-size: 70px;
-    color: #000 !important;
   }
   @media (max-width: 450px) {
     margin-top: 80px;
-    h1 {
+    p {
       font-size: 35px;
       margin-left: 15px;
     }
@@ -33,7 +32,6 @@ export const Section = styled.div`
   margin-top: 70px;
   p {
     font-size: 30px;
-    color: #000 !important;
   }
   @media (max-width: 450px) {
     p {
@@ -48,8 +46,6 @@ export const SocialMedia = styled.div`
   margin-top: 50px;
   a {
     display: flex;
-    color: #000;
-
     p {
       margin-left: 8px;
     }

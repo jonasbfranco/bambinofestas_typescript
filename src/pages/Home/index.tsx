@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     <Container>
       <Hello>
         <img src={FotoPerfil} alt="" />
-        <h1>Olá!</h1>
+        <p>Olá!</p>
       </Hello>
       <Section>
         <p>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram size={36} color="#000" />
+            <FaInstagram size={36} />
             <p>Jonas - Instagram</p>
           </a>
           <br />
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={36} color="#000" />
+            <FaGithub size={36} />
             <p>Jonas - GitHub</p>
           </a>
           <br />
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaYoutube size={36} color="#000" />
+            <FaYoutube size={36} />
             <p>Tecnoob - Youtube</p>
           </a>
         </SocialMedia>

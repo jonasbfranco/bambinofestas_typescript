@@ -1,4 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import {
+  createGlobalStyle,
+  css,
+  FlattenSimpleInterpolation,
+} from 'styled-components';
 
 /* *** Fonts do projeto
 
@@ -25,9 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     height:100%;
   }
   body{
-    background-color: #fff;
     -webkit-font-smoothing: antialiased !important;
-    color: #fafafa;
+    transition: background-color 300ms;
   }
   body, input, button {
     font-size: 14px;
@@ -62,4 +65,50 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     color: #422680
   }
+
+
+${(props): FlattenSimpleInterpolation =>
+  props.theme === 'dark'
+    ? css`
+        body {
+          background-color: #272727;
+          color: #fafafa;
+        }
+        svg {
+          color: #fafafa;
+        }
+        a {
+          color: #fafafa;
+        }
+        p {
+          color: #fafafa;
+        }
+        input,
+        textarea {
+          border: 1px solid #5c5c5c;
+          background-color: #5c5c5c;
+          color: #fafafa;
+        }
+      `
+    : css`
+        body {
+          background-color: #fafafa;
+          color: #272727;
+        }
+        svg {
+          color: #272727;
+        }
+        a {
+          color: #272727;
+        }
+        p {
+          color: #272727;
+        }
+        input,
+        textarea {
+          border: 1px solid #e3e3e3;
+          background-color: #e3e3e3;
+          color: #858585;
+        }
+      `}
 `;
