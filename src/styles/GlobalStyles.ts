@@ -1,5 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
+/* *** Fonts do projeto
+
+font-family: 'Fredoka One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Voltaire', sans-serif;
+
+*/
+
 export const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
@@ -35,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   li {
     list-style-type: none;
-    #text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif, cursive;
     font-size: 40px;
     padding-left: 25px;
@@ -47,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif, cursive;
     font-size: 50px;
-    color: #fff
+    color: #fff;
   }
   h2 {
     color: #422680

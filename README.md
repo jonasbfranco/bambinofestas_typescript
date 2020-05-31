@@ -15,6 +15,17 @@
 
 [Site Oficial](https://jonasbfranco.github.io)
 
+## Comandos React
+
 - yarn add react-icons
 - yarn add styled-component
 - yarn add -D @types/styled-components
+- yarn add react-router-dom
+- yarn add react-spring
+
+## Comandos Git
+
+- git status
+- git add .
+- git commit -m "Escreva seu commit"
+- git push
