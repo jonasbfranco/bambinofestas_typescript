@@ -22,8 +22,8 @@ export const Hello = styled.div`
   @media (max-width: 450px) {
     margin-top: 80px;
     h1 {
-      font-size: 40px;
-      margin-left: 30px;
+      font-size: 35px;
+      margin-left: 15px;
     }
   }
 `;
@@ -49,6 +49,7 @@ export const SocialMedia = styled.div`
   a {
     display: flex;
     color: #000;
+
     p {
       margin-left: 8px;
     }

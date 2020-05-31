@@ -8,6 +8,10 @@ export const Background = styled.div`
   background-color: #422680;
   height: 60px;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 `;
 
 export const Container = styled.div`
@@ -45,11 +49,12 @@ export const MenuDrawer = styled.ul<MenuDrawerProps>`
   background-color: #422680;
   top: 0;
   height: 100vh;
+  width: 40vw;
   right: 0;
   display: ${(props): string => (props.isOpen ? 'block' : 'none')};
   svg:first-child {
-    height: 44px;
-    margin-left: calc(90% - 24px);
+    height: 60px;
+    margin-left: calc(100% - 60px);
   }
   li {
     padding: 10px 0 10px 25px;
@@ -63,5 +68,11 @@ export const MenuDrawer = styled.ul<MenuDrawerProps>`
   }
   @media (max-width: 460px) {
     width: 70vw;
+  }
+  @media (max-width: 320px) {
+    width: 70vw;
+    li {
+      font-size: 35px !important;
+    }
   }
 `;

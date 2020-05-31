@@ -44,6 +44,7 @@ const Home: React.FC = () => {
             <p>Tecnoob - Youtube</p>
           </a>
         </SocialMedia>
+        <br />
       </Section>
     </Container>
   );
