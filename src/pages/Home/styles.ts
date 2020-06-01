@@ -1,10 +1,100 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto;
   @media (max-width: 700px) {
-    width: 90vw;
+    width: 100vw;
+  }
+`;
+
+export const ContainerRosa = styled.div`
+  margin-top: 0;
+  background-color: #f54952;
+  height: 60vh;
+  @media (max-width: 450px) {
+    height: 50vh;
+  }
+`;
+
+export const Bambino = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+    font-size: 70px;
+    text-transform: capitalize !important;
+    padding-top: 60px;
+  }
+  @media (max-width: 450px) {
+    h2 {
+      text-align: center;
+      font-size: 25px;
+      text-transform: capitalize !important;
+      padding-top: 60px;
+    }
+  }
+  @media (max-width: 700px) {
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      text-transform: capitalize !important;
+      padding-top: 60px;
+    }
+  }
+`;
+
+export const Sonhos = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 60px;
+    text-transform: capitalize !important;
+  }
+  @media (max-width: 450px) {
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 60px;
+      text-transform: capitalize !important;
+    }
+  }
+  @media (max-width: 700px) {
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      padding-top: 60px;
+      text-transform: capitalize !important;
+    }
+  }
+`;
+
+export const Festas = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+    font-size: 120px;
+    text-transform: capitalize !important;
+  }
+  @media (max-width: 450px) {
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      text-transform: capitalize !important;
+    }
+  }
+  @media (max-width: 700px) {
+    h1 {
+      text-align: center;
+      font-size: 55px;
+      text-transform: capitalize !important;
+    }
   }
 `;
 

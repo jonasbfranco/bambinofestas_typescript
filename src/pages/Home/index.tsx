@@ -2,11 +2,31 @@ import React from 'react';
 import { FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 import FotoPerfil from '../../assets/foto_perfil.png';
-import { Container, Hello, Section, SocialMedia } from './styles';
+import {
+  Container,
+  Hello,
+  Section,
+  SocialMedia,
+  ContainerRosa,
+  Bambino,
+  Sonhos,
+  Festas,
+} from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
+      <ContainerRosa>
+        <Bambino>
+          <h2>Bambino Eventos</h2>
+        </Bambino>
+        <Sonhos>
+          <h1>Onde sonhos</h1>
+        </Sonhos>
+        <Festas>
+          <h1>viram Festas</h1>
+        </Festas>
+      </ContainerRosa>
       <Hello>
         <img src={FotoPerfil} alt="" />
         <p>Olá!</p>
